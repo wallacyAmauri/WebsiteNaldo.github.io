@@ -45,8 +45,13 @@ var swiper = new Swiper(".bg-slider-thumbs", {
     slidesPerView: 0,
   });
   var swiper2 = new Swiper(".bg-slider", {
+    speed:1000,
     loop: true,
     spaceBetween: 0,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     thumbs: {
       swiper: swiper,
     },
