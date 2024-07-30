@@ -617,27 +617,27 @@ body.open .hamburger .bar:last-child{
 }
 /*-------------Style swiper---------------*/
 .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+    width: 12px !important;
+    height: 12px !important;
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 12px 0px 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
+    margin: 12px 0px 0px 8px !important;
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     display: inline-flex;
     justify-content: center;
 }
 .swiper-button-next, .swiper-button-prev{
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     backdrop-filter: blur(10px);
     text-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 25px;
     background: rgba(225, 255, 255, 0.1);
-    border-radius: 50%;
+    border-radius: 50% !important;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 20px;
+    font-size: 20px !important;
     color: var(--main-color-2);
 }
 @media (max-width: 1100px){

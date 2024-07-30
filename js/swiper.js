@@ -39,10 +39,6 @@ var swiper4 = new Swiper(".img-1", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    autoplay: {
-      delay: 800,
-      disableOnInteraction: false,
-    },
     mousewheel: {
       invert: false,
     },
@@ -54,10 +50,6 @@ var swiper5 = new Swiper(".img-2", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    autoplay: {
-      delay: 900,
-      disableOnInteraction: false,
-    },
     mousewheel: {
       invert: false,
     },
@@ -69,10 +61,6 @@ var swiper6 = new Swiper(".img-3", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
     mousewheel: {
       invert: false,
     },
