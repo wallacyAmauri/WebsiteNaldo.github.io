@@ -37,38 +37,26 @@ function activeLink() {
 } 
 activeLink();
 
+/* ----------- arquivos do portfolio Navbar ----------- */
+const filterButtons = document.querySelectorAll(".btns button")
+const filterableCards = document.querySelectorAll(".gallery .card")
 
-/* ----------- swiper home ----------- */
-var swiper = new Swiper(".bg-slider-thumbs", {
-    loop: true,
-    spaceBetween: 0,
-    slidesPerView: 0,
-  });
-  var swiper2 = new Swiper(".bg-slider", {
-    speed:1000,
-    loop: true,
-    spaceBetween: 0,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
+// definir a função filterCards
+const filterCards = e =>{
+  document.querySelector(".active").classList.remove("active");
+  e.target.classList.add("active");
 
-  var swiper3 = new Swiper(".tuor", {
-    effect: "cards",
-    grabCursor: true,
-    initialSlide: 2,
-    speed: 700,
-    loop: true,
-    rotate: true,
-    autoplay: {
-      delay: 700,
-      disableOnInteraction: false,
-    },
-    mousewheel: {
-      invert: false,
-    },
-});
+  //interar sobre cada cartão filtrável
+  filterableCards.forEach(card => {
+    //Adicione a classe "hide" para ocultar o cartão inicialmente
+    card.classList.add("hide");
+    //verifique se o cartão corresponde ao filtro selecionado ou se "todos" está selecionado
+    if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+      console.log("ai dento")
+      card.classList.remove("hide");
+    }
+  });
+};
+
+//adicionar ouvinte de evento de clique a cada botão de filtro
+filterButtons.forEach(button => button.addEventListener("click", filterCards));

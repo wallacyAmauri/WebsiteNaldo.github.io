@@ -36,7 +36,10 @@ body.stopScrolling{
     height:100%;
     overflow:hidden;
 }
-
+.section{
+    position: relative;
+    padding: 7rem 0;
+}
 a{
     text-decoration: none;
 }
@@ -536,6 +539,107 @@ body.open .hamburger .bar:last-child{
     margin: 0 0 20px 20px;
 }
 
+/*-------------Style Services---------------*/
+.services .btns{
+    padding: 20px 0px 25px;
+}
+.services .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.services .btns button{
+    display: inline-block;
+    padding: 3px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color-dark);
+    letter-spacing: 1px;
+    margin: 4px 15px;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+.services .btns .btn-li{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: var(--bg-color-2);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.services .btn-li.active{
+    background: var(--main-color-1);
+    color: var(--colo-white-3);
+}
+
+/*-------------Style card---------------*/
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background: var(--colo-white-3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    /* transition: transform 0.6s ease; */
+}
+.card.hide{
+    display: none;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px 20px 20px 20px;
+}
+.card-content h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-content p{
+    font-size: 15px;
+    color: var(--main-color-dark-1);
+    margin-bottom: 20px;
+}
+/*-------------Style swiper---------------*/
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 12px 0px 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: inline-flex;
+    justify-content: center;
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 40px;
+    height: 40px;
+    backdrop-filter: blur(10px);
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 25px;
+    background: rgba(225, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 20px;
+    color: var(--main-color-2);
+}
 @media (max-width: 1100px){
     .logo{
         font-size: 1.45rem;
