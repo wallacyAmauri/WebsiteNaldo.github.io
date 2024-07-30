@@ -456,12 +456,12 @@ body.open .hamburger .bar:last-child{
 }
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 70px;
     color: var(--bg-color-2);
     border: none;
     font-size: 19px;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 6px;
     margin-top: 15px;
     transition: 0.3s ease;
     background-color: var(--main-color-2);
