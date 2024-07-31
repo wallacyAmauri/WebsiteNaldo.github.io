@@ -754,7 +754,7 @@ body.open .hamburger .bar:last-child{
     margin-top: 15px;
     font-size: 14px;
     text-align: left !important;
-
+    
 }
 .testimoials .swiper-pagination{
     position: relative;
@@ -773,6 +773,41 @@ body.open .hamburger .bar:last-child{
 .w-6 {
     width: 2rem;
     height: 2rem;
+}
+/*-------------Style footer---------------*/
+.footer {
+    margin-top: 10rem;
+    background-color: var(--bg-body);
+}
+.footer_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    padding: 5rem 0rem;
+    color: var(--main-color-dark);
+}
+.footer_logo {
+    font-size: 1.8rem;
+    color: var(--main-color-1);
+    font-weight: 700;
+}
+.footer_p {
+    margin-top: 1.2rem;
+}
+.footer_item_titl {
+    margin-bottom: 1.2rem;
+}
+.footer_list_item {
+    margin: 0.5rem 0rem;
+}
+.footer_bottom_container {
+    width: 100%;
+    text-align: center;
+}
+.footer_copy {
+    color: var(--main-color-dark);
+    padding: 1.5rem 0rem;
 }
 @media (max-width: 1100px){
     .logo{

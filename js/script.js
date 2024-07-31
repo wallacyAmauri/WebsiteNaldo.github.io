@@ -98,6 +98,7 @@ const filterableCards = document.querySelectorAll(".gallery .card")
 
 // definir a função filterCards
 const filterCards = e =>{
+  console.log(e);
   document.querySelector(".active").classList.remove("active");
   e.target.classList.add("active");
 
