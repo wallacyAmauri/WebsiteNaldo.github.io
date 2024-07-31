@@ -96,8 +96,13 @@ activeLink();
 const filterButtons = document.querySelectorAll(".btns button")
 const filterableCards = document.querySelectorAll(".gallery .card")
 
+const activeButton = document.querySelector('button[data-name="all"]');
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
 // definir a função filterCards
 const filterCards = e =>{
+  activeButton.classList.remove('active')
   console.log(e);
   document.querySelector(".active").classList.remove("active");
   e.target.classList.add("active");

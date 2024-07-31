@@ -625,7 +625,7 @@ body.open .hamburger .bar:last-child{
     cursor: pointer;
     transition: color 0.4s;
 }
-.services .btns .btn-li{
+.services .btns button{
     padding: 10px 20px;
     font-size: 18px;
     background: var(--bg-color-2);
@@ -635,7 +635,7 @@ body.open .hamburger .bar:last-child{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.services .btn-li.active{
+.services button.active{
     background: var(--main-color-1);
     color: var(--colo-white-3);
 }
