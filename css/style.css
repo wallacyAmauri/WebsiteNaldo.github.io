@@ -279,39 +279,6 @@ body.open .hamburger .bar:last-child{
     height: 100vh;
     object-fit: cover;
 }
-/*-----------animation style img home----------------*/
-.img-home {
-	-webkit-animation: img-home 1.8s ease-out reverse both;
-	        animation: img-home 1.8s ease-out reverse both;
-}
-@-webkit-keyframes img-home {
-    0% {
-      -webkit-transform: scale(1) translateY(0);
-              transform: scale(1) translateY(0);
-      -webkit-transform-origin: 50% 84%;
-              transform-origin: 50% 84%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translateY(15px);
-              transform: scale(1.25) translateY(15px);
-      -webkit-transform-origin: bottom;
-              transform-origin: bottom;
-    }
-  }
-  @keyframes img-home {
-    0% {
-      -webkit-transform: scale(1) translateY(0);
-              transform: scale(1) translateY(0);
-      -webkit-transform-origin: 50% 84%;
-              transform-origin: 50% 84%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translateY(15px);
-              transform: scale(1.25) translateY(15px);
-      -webkit-transform-origin: bottom;
-              transform-origin: bottom;
-    }
-  }
 .swiper-slide .text-content{
     position: absolute;
     top:25%;
