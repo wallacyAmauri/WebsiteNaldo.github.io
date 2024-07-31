@@ -5,7 +5,7 @@
   --colo-primary-card: rgba(46, 189, 255, 0.699);
   --main-color-dark: #242425;
   --main-color-dark-1: #636277;
-  --main-color-dark-2: #b4b4b4;
+  --main-color-dark-2: #bebcbc;
   --bg-body:#ffffff;
   --bg-body-2: #e0e7e7;
   --bg-color-2: #e6efef;
@@ -172,7 +172,7 @@ header nav{
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.5px;
-    color: var(--bg-color-3);
+    color: var(--main-color-dark-2);
     font-weight: 500;
     opacity: 0.9;
     transition: 0.3s;
@@ -771,17 +771,17 @@ body.open .hamburger .bar:last-child{
     font-size: 24px;
     text-transform: capitalize;
     font-weight: 600;
-    color: var(--colo-primary);
+    color: var(--main-color-1);
     line-height: 1.2;
 }
 
 .testimoials-item .job{
     text-transform: capitalize;
-    color: var(--colo-dark-1);
+    color: var(--main-color-dark-1);
 }
 .testimoials-item p{
     margin-top: 20px;
-    color: var(--colo-dark-2);
+    color: var(--main-color-dark);
 }
 .testimoials-item .rating{
     margin-top: 15px;
