@@ -34,14 +34,11 @@ var swiper3 = new Swiper(".tuor", {
     },
 });
     
-/* ----------- swiper about ----------- */
+/* ----------- swiper services ----------- */
 var swiper4 = new Swiper(".img-1", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
         el: '.swiper-pagination-1',
     }
@@ -50,9 +47,6 @@ var swiper5 = new Swiper(".img-2", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
         el: '.swiper-pagination-2',
     }
@@ -61,9 +55,6 @@ var swiper6 = new Swiper(".img-3", {
     grabCursor: true,
     speed: 900,
     loop: true,
-    mousewheel: {
-      invert: false,
-    },
     pagination: {
         el: '.swiper-pagination-3',
     }
@@ -72,9 +63,6 @@ var swiper7 = new Swiper(".img-1", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-1',
     clickable: true,
@@ -88,9 +76,6 @@ var swiper8 = new Swiper(".img-2", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-2',
     clickable: true,
@@ -104,9 +89,6 @@ var swiper9 = new Swiper(".img-3", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-3',
     clickable: true,
@@ -120,9 +102,6 @@ var swiper10 = new Swiper(".img-4", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-4',
     clickable: true,
@@ -136,9 +115,6 @@ var swiper11 = new Swiper(".img-5", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-5',
     clickable: true,
@@ -152,9 +128,6 @@ var swiper12 = new Swiper(".img-6", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-6',
     clickable: true,
@@ -168,9 +141,6 @@ var swiper13 = new Swiper(".img-7", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-7',
     clickable: true,
@@ -184,9 +154,6 @@ var swiper14 = new Swiper(".img-8", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-8',
     clickable: true,
@@ -200,9 +167,6 @@ var swiper15 = new Swiper(".img-9", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-9',
     clickable: true,
@@ -216,9 +180,6 @@ var swiper16 = new Swiper(".img-10", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-10',
     clickable: true,
@@ -232,9 +193,6 @@ var swiper17 = new Swiper(".img-11", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-11',
     clickable: true,
@@ -248,9 +206,6 @@ var swiper18 = new Swiper(".img-12", {
   grabCursor: true,
   speed: 900,
   loop: true,
-  mousewheel: {
-    invert: false,
-  },
   pagination: {
     el: '.swiper-pagination-12',
     clickable: true,
@@ -259,4 +214,24 @@ var swiper18 = new Swiper(".img-12", {
       nextEl: "#button-next-12",
       prevEl: "#button-prev-12",
   },
+});
+
+/* ----------- swiper testimoials ----------- */
+var swiper = new Swiper('.testimoials-slider-swiper', {
+  grapCursor: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
+  pagination:{
+      el: '.js-testimoials-pagination',
+      clickable: true
+  },
+  breakpoints:{
+      767:{
+          slidesPerView: 2
+      }
+  }
 });
