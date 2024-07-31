@@ -681,8 +681,8 @@ body.open .hamburger .bar:last-child{
 }
 /*-------------Style swiper---------------*/
 .pagination-card .swiper-pagination-bullet {
-    width: 12px !important;
-    height: 12px !important;
+    width: 15px !important;
+    height: 15px !important;
 }
 .pagination-card .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 12px 0px 0px 8px !important;
