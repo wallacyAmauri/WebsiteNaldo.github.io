@@ -92,31 +92,32 @@ function activeLink() {
 } 
 activeLink();
 
+ /* ----------- arquivos do portfolio Navbar ----------- */
+ 
+ let mixer = mixitup('.gallery', { 
+   selectors: {
+     target: '.card'
+    },
+  animation: {
+    duration: 500,
+  },
+});
+
 /* ----------- arquivos do portfolio Navbar ----------- */
-const filterButtons = document.querySelectorAll(".btns button")
-const filterableCards = document.querySelectorAll(".gallery .card")
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-const activeButton = document.querySelector('button[data-name="all"]');
-    if (activeButton) {
-        activeButton.classList.add('active');
-    }
-// definir a função filterCards
-const filterCards = e =>{
-  activeButton.classList.remove('active')
-  console.log(e);
-  document.querySelector(".active").classList.remove("active");
-  e.target.classList.add("active");
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      this.parentElement.classList.toggle("active");
 
-  //interar sobre cada cartão filtrável
-  filterableCards.forEach(card => {
-    //Adicione a classe "hide" para ocultar o cartão inicialmente
-    card.classList.add("hide");
-    //verifique se o cartão corresponde ao filtro selecionado ou se "todos" está selecionado
-    if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
-      card.classList.remove("hide");
-    }
-  });
-};
+      var pannel = this.nextElementSibling;
 
-//adicionar ouvinte de evento de clique a cada botão de filtro
-filterButtons.forEach(button => button.addEventListener("click", filterCards));
+      if (pannel.style.display === "block") {
+        pannel.style.display = "none";
+      } else {
+        pannel.style.display = "block";
+      }
+    });
+  }
