@@ -776,6 +776,10 @@ body.open .hamburger .bar:last-child{
     height: 2rem;
 }
 /*-------------Style FAQ---------------*/
+#faq {
+    position: relative;
+    padding: 0rem 0rem 7rem 0rem;
+}
 .sub-heading {
     color: var(--main-color-1);
     text-transform: uppercase;
@@ -941,9 +945,11 @@ body.open .hamburger .bar:last-child{
     .testimoials-container{
         margin: 0 auto;
     }
+    .wrapper{
+        margin: 0 auto;
+    }
     .footer_container{
         margin: 0 auto;
-
     }
 }
 
@@ -1028,7 +1034,7 @@ body.open .hamburger .bar:last-child{
     }
     
     body.open header.scrolled{
-        max-height:485px;
+        max-height: 440px;
     }
     body.open .links{
         opacity:1;
