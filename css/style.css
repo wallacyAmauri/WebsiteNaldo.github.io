@@ -280,6 +280,7 @@ body.open .hamburger .bar:last-child{
     height: 100vh;
     object-fit: cover;
 }
+
 .swiper-slide .text-content{
     position: absolute;
     top:25%;
