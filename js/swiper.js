@@ -5,11 +5,11 @@ var swiper = new Swiper(".bg-slider-thumbs", {
     slidesPerView: 0,
 });
 var swiper2 = new Swiper(".bg-slider", {
-    speed:1000,
+    speed:1200,
     loop: true,
     spaceBetween: 0,
     autoplay: {
-      delay: 2500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     thumbs: {
@@ -22,11 +22,11 @@ var swiper3 = new Swiper(".tuor", {
     effect: "cards",
     grabCursor: true,
     initialSlide: 2,
-    speed: 700,
+    speed: 1000,
     loop: true,
     rotate: true,
     autoplay: {
-        delay: 700,
+        delay: 1000,
         disableOnInteraction: false,
     },
     mousewheel: {
@@ -41,7 +41,7 @@ var swiper4 = new Swiper(".img-1", {
     loop: true,
     pagination: {
         el: '.swiper-pagination-1',
-    }
+    },
 });
 var swiper5 = new Swiper(".img-2", {
     grabCursor: true,
@@ -109,7 +109,7 @@ var swiper10 = new Swiper(".img-4", {
   navigation: {
     nextEl: "#button-next-4",
     prevEl: "#button-prev-4",
-},
+  },
 });
 var swiper11 = new Swiper(".img-5", {
   grabCursor: true,

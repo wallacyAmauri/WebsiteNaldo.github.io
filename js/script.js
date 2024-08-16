@@ -121,3 +121,18 @@ var i;
       }
     });
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttonCard = document.getElementById('toggle-button-card');
+    const moreText = document.getElementById('more-text');
+
+    buttonCard.addEventListener('click', function() {
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'inline';
+            buttonCard.textContent = 'Saiba menos';
+        } else {
+            moreText.style.display = 'none';
+            buttonCard.textContent = 'Saiba mais';
+        }
+    });
+});

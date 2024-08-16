@@ -60,6 +60,13 @@ ul{
 ::-webkit-scrollbar-thumb:hover{
     background: var(--main-color-2);
 }
+/*---------- style whatzapp----------*/
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20em;
+    right:10px;
+    z-index: 999;
+}
 /*---------- style navbar ----------*/
 .container-header{
     position: relative;
@@ -375,7 +382,7 @@ body.open .hamburger .bar:last-child{
 .bg-slider-thumbs{
     z-index: 777;
     position: absolute;
-    bottom: 7em;
+    bottom: 5em;
     left: 50%;
     transform: translateX(-73%);
     transition: 0.3s ease;
@@ -468,35 +475,12 @@ body.open .hamburger .bar:last-child{
 .about-text #h1-about::before{
     content: '';
     position: absolute;
-    width: 4rem;
-    height: 3.6rem;
-    border-bottom: 5px solid var(--colo-primary-card);
-    left: -15px;
-    bottom: 0px;
+    width: 16rem;
+    height: 16rem;
+    left: 0px;
+    bottom: 0;
     border-right: 5px solid var(--colo-primary-card);
-    border-left: 5px solid var(--colo-primary-card);
     transform: rotate(90deg);
-}
-.about-text #h1-about::after{
-    content: '';
-    position: absolute;
-    width: 4rem;
-    height: 3.6rem;
-    border-bottom: 5px solid var(--colo-primary-card);
-    right: -15px;
-    bottom: 0px;
-    border-right: 5px solid var(--colo-primary-card);
-    border-left: 5px solid var(--colo-primary-card);
-    transform: rotate(270deg);
-}
-.about-text #h1-service::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    display: block;
-    margin: 0 auto;
-    background-color: var(--colo-primary-card);
 }
 .about-text p {
     font-size: 18px;
@@ -641,7 +625,27 @@ body.open .hamburger .bar:last-child{
     background: var(--main-color-1);
     color: var(--colo-white-3);
 }
+#more-text {
+    display: none;
+}
 
+.hidden {
+    display: none;
+}
+
+#toggle-button-card {
+    margin-top: 0px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--main-color-dark-2);
+    border: none;
+    border-radius: 6px;
+}
+#toggle-button-card:hover{
+    border: none;
+    
+}
 /*-------------Style card---------------*/
 .gallery{
     display: flex;
@@ -1086,5 +1090,24 @@ body.open .hamburger .bar:last-child{
     }
     #h1-testimoials{
         font-size: 30px;
+    }
+}
+@media (max-width: 570px){
+    .bg-slider-thumbs {
+        bottom: -3.5em;
+    }
+}
+@media (max-width: 420px){
+    .swiper-slide .text-content .title {
+        font-size: 1.7em;
+    }
+    .btn{
+        padding: 10px 40px;
+    }
+    .services_container{
+        grid-template-columns: 1fr;
+    }
+    .footer_container{
+        grid-template-columns: 1fr;
     }
 }
